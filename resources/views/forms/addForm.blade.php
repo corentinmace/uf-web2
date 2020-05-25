@@ -2,6 +2,6 @@
 
 @section('content')
 <div class="container">
-    <div id="addForm">@csrf_token</div>
+    <div id="addForm"></div>
 </div>
 @endsection

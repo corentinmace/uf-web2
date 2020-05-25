@@ -12,11 +12,11 @@ class Property extends Model {
     'property_adress', 'property_adress_comp', 'property_city', 'property_zip'
   ];
 
-  public fuction user(){
+  public function user(){
     return $this->belongsTo(User::class);
   }
 
-  public function up(){
+  public function create(){
     Schema::create('property', function(Blueprint $table){
       $table->increments('id_property');
       // $table->integer('user_id')->unsigned()->index();

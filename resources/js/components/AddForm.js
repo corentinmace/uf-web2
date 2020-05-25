@@ -131,7 +131,7 @@ export default class App extends Component {
       <div className="container">
         <form className="mt-5" onSubmit={this.handleSubmit}>
           {csrf_token}
-          <h2><span>I</span>nformation utilisateur</h2>
+          <h2><span>I</span>nformation utilisateur test</h2>
           <div className="form-row">
             <div className="form-group col-md-4">
               <label for="inputLastname">Nom</label>
