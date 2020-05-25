@@ -3,11 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use app\Property;
 
 class PropertyController extends Controller {
 
   public function index(Request $request, Property $property){
     // Get all property base on user id
+
     $allProperty = $property->whereIn('user_id', $request->user())->with('user');
     // $property = $allProperty->orderBy('created_at', 'desc')->take(10)->get();
     $property = $allProperty;
